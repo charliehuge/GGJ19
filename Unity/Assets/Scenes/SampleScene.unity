@@ -588,7 +588,7 @@ MonoBehaviour:
   Osc1Pitch: 0
   Osc1WavetableAmount: 0.289000004529953
   Osc2Volume: 0.357
-  Osc2Pitch: 12
+  Osc2Pitch: 11.800000190734863
   Osc2WavetableAmount: 0.24799999594688416
   PresetId: 
 --- !u!82 &771270145
@@ -798,7 +798,7 @@ MonoBehaviour:
   Octave: 3
   MainVolume: 1
   Osc1Volume: 0.5
-  Osc1Pitch: 0
+  Osc1Pitch: -0.20000000298023224
   Osc1WavetableAmount: 0.289000004529953
   Osc2Volume: 0.357
   Osc2Pitch: 12
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   Octave: 3
   MainVolume: 1
   Osc1Volume: 0.5
-  Osc1Pitch: 0
+  Osc1Pitch: 0.20000000298023224
   Osc1WavetableAmount: 0.289000004529953
   Osc2Volume: 0.357
   Osc2Pitch: 12
@@ -1284,5 +1284,5 @@ MonoBehaviour:
   _attackTime: 0
   _releaseTime: 0.36000001430511475
   _numVoices: 8
-  _samplerVoicePrefab: {fileID: 1520171191958471549, guid: cbf7ba4f9aad63c40988f5be1dd378d4,
+  _samplerVoicePrefab: {fileID: 1520171191958471549, guid: de5929ee63bbe6c468a688fa878f3637,
     type: 3}

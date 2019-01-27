@@ -9,7 +9,7 @@ public class SamplerVoice : MonoBehaviour
     private AudioSource _audioSource;
     private uint _samplesUntilEnvelopeTrigger;
 
-    public void Play(AudioClip audioClip, float pitch, double startTime, double attackTime, double sustainTime, double releaseTime)
+    public void Play(AudioClip audioClip, float pitch, float gain, double startTime, double attackTime, double sustainTime, double releaseTime)
     {
         sustainTime = (sustainTime > attackTime) ? (sustainTime - attackTime) : 0.0;
         _envelope.Reset(attackTime, sustainTime, releaseTime, AudioSettings.outputSampleRate);
@@ -19,6 +19,7 @@ public class SamplerVoice : MonoBehaviour
 
         _audioSource.clip = audioClip;
         _audioSource.pitch = pitch;
+        _audioSource.volume = gain;
         _audioSource.PlayScheduled(startTime);
     }
 

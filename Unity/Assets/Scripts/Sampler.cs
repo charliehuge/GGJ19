@@ -67,8 +67,10 @@ public class Sampler : MonoBehaviour
     private void Play(double tickTime, int midiNoteNumber, double duration)
     {
         int rand = Random.Range(0, _clips.Count);
+        float gain = Random.value;
+        float pitch = 1.0f + (Random.value - 0.5f) * 0.01f;
 
-        _samplerVoices[_nextVoiceIndex].Play(_clips[rand], 1.0f, tickTime, _attackTime, duration, _releaseTime);
+        _samplerVoices[_nextVoiceIndex].Play(_clips[rand], pitch, gain, tickTime, _attackTime, duration, _releaseTime);
 
         _nextVoiceIndex = (_nextVoiceIndex + 1) % _samplerVoices.Length;
     }
